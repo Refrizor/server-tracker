@@ -1,4 +1,4 @@
-import {Server,ServerWithState} from "../services/serverService"; // Assuming you're using PostgreSQL, replace with your DB library
+import {Server} from "../services/serverService";
 import pool from '../config/mysql';
 import { RowDataPacket } from 'mysql2/promise';
 
@@ -9,8 +9,8 @@ interface ServerRow extends RowDataPacket {
     environment: string;
     version: string;
     port: number;
-    last_started: number; // Assuming it's a long timestamp
-    last_heartbeat: number; // Assuming it's a long timestamp
+    last_started: number;
+    last_heartbeat: number;
     last_seen_offline: number | null;
 }
 
