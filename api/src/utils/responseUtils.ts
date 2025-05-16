@@ -20,7 +20,6 @@ interface StandardResponse<T = unknown> {
  * @param resultType - The operation result type (e.g., SUCCESS, NOT_FOUND, etc.)
  * @param message - A human-readable message
  * @param target
- * @param data - Optional additional data payload
  */
 export function sendResponse<T>(
     res: Response,
