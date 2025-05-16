@@ -20,23 +20,17 @@ This project is organized into two main modules:
 - Scheduled downtime detection based on heartbeat timeouts
 - Asynchronous, modular plugin built with Guice
 
----
-
 ## What This Is Not
 
 - _Not_ meant to be a plug-and-play — setup is required
 - No metrics system (yet)
 - Built as a foundation for future expansion
 
----
-
 ## Requirements
 Tech stack is shown below, but of course, the following is required:
 1. MySQL database server,
 2. Redis server
 3. Spigot server on 1.21.5
-
----
 
 ## Tech Stack
 
