@@ -1,0 +1,20 @@
+# inferris.yml
+
+# Special settings for Inferris
+# Do not modify unless you know what you're doing!
+
+api:
+  url: http://localhost:3000
+  key: null
+
+server:
+  uuid: b3209ce1-023f-4c50-baaf-25949f3915b7
+  name: someName
+  type: paper
+  environment: PRODUCTION
+
+address: null
+redis:
+  password: "pass"
+  address: "localhost:6379"
+  port: 6379

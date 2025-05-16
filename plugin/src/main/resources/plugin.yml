@@ -1,0 +1,8 @@
+name: ServerTracker
+version: 1.0
+author: Refrizor
+api-version: 1.21
+main: me.devin.ServerTrackerPlugin
+commands:
+  servers:
+    description: View a list of all servers

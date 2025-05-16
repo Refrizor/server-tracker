@@ -1,0 +1,10 @@
+# System
+.DS_Store
+*.log
+# Environment files
+.env
+node_modules/
+dist/
+# JetBrains
+*.iml
+.idea/
