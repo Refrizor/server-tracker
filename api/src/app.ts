@@ -4,6 +4,7 @@ dotenv.config();
 import { logger } from './utils/logger';
 import { createServer } from './server';
 import { startSchedulers } from './loaders/scheduler';
+import {connectRedis} from "./config/redis";
 
 const PORT: number = parseInt(process.env.API_PORT || '3000', 10);
 
@@ -15,6 +16,7 @@ const PORT: number = parseInt(process.env.API_PORT || '3000', 10);
             logger.info(`Server running on port ${PORT}`);
         });
 
+        await connectRedis();
         startSchedulers();
     } catch (error: any) {
         logger.error('Failed to start application:', error);

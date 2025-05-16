@@ -4,7 +4,7 @@ import redisPublisher from "../utils/redisPublisher";
 
 const THRESHOLD_MS = 6 * 1000; // 6 seconds
 
-const TTL_EXPIRY = 60; // 30 seconds. A safety margin above the threshold, typically 1.5x the threshold.
+const TTL_EXPIRY = 60; // 60 seconds. A safety margin above the threshold, typically 1.5x the threshold.
 
 // Database-matched schema
 export interface Server {
