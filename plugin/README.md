@@ -37,8 +37,6 @@ server:
   name: "lobby"
   type: "spigot"
   environment: "PRODUCTION"
-  version: "1.21.5"
-  port: 25565
   ```
 
 ## Components
